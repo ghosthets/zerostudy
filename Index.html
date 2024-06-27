@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zerostudy</title>
-    <a href="chat.html" target="_blank">Chat</a>
     <style>
         /* Add some basic styling to make the page look decent */
         body {
@@ -12,17 +11,17 @@
             margin: 0;
             padding: 0;
         }
-       .header {
+        .header {
             background-color: #f0f0f0;
             padding: 20px;
             text-align: center;
         }
-       .header h1 {
+        .header h1 {
             color: #333;
             font-size: 36px;
             margin: 0;
         }
-       .brown-text-area {
+        .brown-text-area {
             background-color: #964B00;
             color: #fff;
             padding: 20px;
@@ -31,24 +30,36 @@
             width: 80%;
             border-radius: 10px;
         }
-       .footer {
+        .footer {
             background-color: #f0f0f0;
             padding: 10px;
             text-align: center;
             clear: both;
         }
-       .footer a {
+        .footer a {
             color: #333;
             text-decoration: none;
         }
-       .footer a:hover {
+        .footer a:hover {
             color: #666;
+        }
+        .chat-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .chat-button:hover {
+            background-color: #3e8e41;
         }
     </style>
 </head>
 <body>
     <header class="header">
         <h1>Zerostudy</h1>
+        <button class="chat-button" onclick="location.href='chat.html'">Chat</button>
     </header>
     <div class="brown-text-area">
         <p>Inorganic Chemistry</p>
