@@ -11,17 +11,17 @@
             margin: 0;
             padding: 0;
         }
-        .header {
+       .header {
             background-color: #f0f0f0;
             padding: 20px;
             text-align: center;
         }
-        .header h1 {
+       .header h1 {
             color: #333;
             font-size: 36px;
             margin: 0;
         }
-        .brown-text-area {
+       .brown-text-area {
             background-color: #964B00;
             color: #fff;
             padding: 20px;
@@ -30,17 +30,17 @@
             width: 80%;
             border-radius: 10px;
         }
-        .footer {
+       .footer {
             background-color: #f0f0f0;
             padding: 10px;
             text-align: center;
             clear: both;
         }
-        .footer a {
+       .footer a {
             color: #333;
             text-decoration: none;
         }
-        .footer a:hover {
+       .footer a:hover {
             color: #666;
         }
     </style>
@@ -50,32 +50,34 @@
         <h1>Zerostudy</h1>
     </header>
     <div class="brown-text-area">
-        <p> Inorganic Chemistry</p>
+        <p>Inorganic Chemistry</p>
     </div>
-    <h3> Periodic Classification 01: Introduction To Periodic Table </h3>
-        <input type="hidden" id="video-link" value="https://www.dailymotion.com/video/k3S3tyzA43AZZjAWnRs">
-    <div id="video-container">
-      <iframe frameborder="0" width="360" height="200" src="" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    <h3>Periodic Classification 01: Introduction To Periodic Table</h3>
+    <input type="hidden" class="video-link" value="https://www.dailymotion.com/video/k3S3tyzA43AZZjAWnRs">
+    <div class="video-container">
+        <iframe frameborder="0" width="360" height="200" src="" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
     </div>
-    
 
     <div class="brown-text-area">
         <p>Physics</p>
     </div>
-    <h3> Mole Concepts 01: Elements & Compounds
-</h3>
-    <input type="hidden" id="video-link" value="https://www.dailymotion.com/video/x911eyq">
-    <div id="video-container">
-      <iframe frameborder="0" width="360" height="200" src="" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    <h3>Mole Concepts 01: Elements & Compounds</h3>
+    <input type="hidden" class="video-link" value="https://www.dailymotion.com/video/x911eyq">
+    <div class="video-container">
+        <iframe frameborder="0" width="360" height="200" src="" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
     </div>
     <footer class="footer">
         <p>Follow me on Instagram: <a href="https://instagram.com/the0jr">Student's Discussion Here</a></p>
     </footer>
-    
+
     <script>
-      var videoLink = document.getElementById("video-link").value;
-      var iframeSrc = "https://www.dailymotion.com/embed/video/" + videoLink.split("video/")[1];
-      document.querySelector("iframe").src = iframeSrc;
+        var videoLinks = document.querySelectorAll(".video-link");
+        var videoContainers = document.querySelectorAll(".video-container");
+
+        videoLinks.forEach((videoLink, index) => {
+            var iframeSrc = "https://www.dailymotion.com/embed/video/" + videoLink.value.split("video/")[1];
+            videoContainers[index].querySelector("iframe").src = iframeSrc;
+        });
     </script>
 </body>
 </html>
