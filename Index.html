@@ -49,11 +49,23 @@
     <header class="header">
         <h1>Zerostudy</h1>
     </header>
+        <input type="hidden" id="video-link" value="https://www.dailymotion.com/video/k3S3tyzA43AZZjAWnRs">
+    <div id="video-container">
+      <iframe frameborder="0" width="480" height="269" src="" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+    </div>
+    
+
     <div class="brown-text-area">
         <p>Made by AJ</p>
     </div>
     <footer class="footer">
         <p>Follow me on Instagram: <a href="https://github.com/ghosthets/zerostudy/discussions/1">Student's Discussion Here</a></p>
     </footer>
+    
+    <script>
+      var videoLink = document.getElementById("video-link").value;
+      var iframeSrc = "https://www.dailymotion.com/embed/video/" + videoLink.split("video/")[1];
+      document.querySelector("iframe").src = iframeSrc;
+    </script>
 </body>
 </html>
