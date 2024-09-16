@@ -3,43 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equation Solution</title>
+    <title>Penguin Equations</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
+            margin: 40px;
+            line-height: 1.8;
         }
-        p, h2 {
-            line-height: 1.6;
+        h2, h3 {
+            color: #2F4F4F;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .equation {
+            font-size: 1.4em;
+            font-weight: bold;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-left: 5px solid #2F4F4F;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            color: #696969;
         }
     </style>
 </head>
 <body>
-    <h2>Equation:</h2>
-    <p>(1 + i)<sup>5</sup> &times; (φ + 1/i)<sup>5</sup> = 32</p>
+    <h2>Equation 1:</h2>
+    <p class="equation">(1 + i)<sup>-5</sup> &times; (1 + 1/i)<sup>5</sup> = 32</p>
+    <p class="explanation">
+        This equation involves raising the complex numbers to the power of 5 and multiplying the results. The first term is (1 + i) raised to the power of -5. 
+        The second term is (1 + 1/i) raised to the power of 5. Simplifying 1/i gives -i, which transforms the second term to (1 - i). 
+        Solving this gives us the final result equal to 32.
+    </p>
 
-    <h2>Solution:</h2>
+    <h2>Equation 2:</h2>
+    <p class="equation">(1 - i)<sup>n</sup> &times; (1 - 1/i)<sup>n</sup> = 2<sup>n</sup></p>
+    <p class="explanation">
+        In this equation, the base (1 - i) and (1 - 1/i) are both raised to the power of <em>n</em>. As in the previous case, 1/i is equivalent to -i, simplifying the second term to (1 + i). 
+        The multiplication of both expressions results in 2<sup>n</sup>.
+    </p>
 
-    <h3>Step 1: Simplifying the first term (1 + i)<sup>5</sup></h3>
-    <p>The complex number (1 + i) can be represented in polar form as:</p>
-    <p>(1 + i) = √2 * (cos(π/4) + i * sin(π/4))</p>
-    <p>Using De Moivre's Theorem: (r * (cos θ + i sin θ))<sup>n</sup> = r<sup>n</sup> * (cos(nθ) + i sin(nθ))</p>
-    <p>Therefore, (1 + i)<sup>5</sup> = (√2)<sup>5</sup> * (cos(5π/4) + i * sin(5π/4))</p>
-    <p>We know that √2<sup>5</sup> = 4√2. Now, calculate cos(5π/4) = -1/√2 and sin(5π/4) = -1/√2.</p>
-    <p>Thus, (1 + i)<sup>5</sup> = 4√2 * (-1/√2 - i/√2) = -4 - 4i</p>
+    <h2>Equation 3:</h2>
+    <p class="equation">(1 - 1/i)<sup>4</sup> &times; (1 - 1/i)<sup>4</sup> = -8</p>
+    <p class="explanation">
+        Here, both terms are (1 - 1/i), which simplifies to (1 + i). Each of these terms is raised to the power of 4, and their product results in -8. 
+        The negative value comes from the powers of complex numbers, particularly when dealing with imaginary units.
+    </p>
 
-    <h3>Step 2: Simplifying the second term (φ + 1/i)<sup>5</sup></h3>
-    <p>We know that 1/i = -i, so:</p>
-    <p>(φ + 1/i) = (φ - i)</p>
-    <p>Now, let's leave this expression as (φ - i)<sup>5</sup> for now, as φ is a constant (potentially the golden ratio).</p>
-
-    <h3>Step 3: Expanding the equation</h3>
-    <p>The equation becomes:</p>
-    <p>(-4 - 4i) &times; (φ - i)<sup>5</sup> = 32</p>
-    <p>We need to solve this by expanding (φ - i)<sup>5</sup> and multiplying the terms. This is a complex expression involving φ, which may be the golden ratio (φ ≈ 1.618).</p>
-
-    <h3>Step 4: Conclusion</h3>
-    <p>After simplifying and multiplying the terms, you can solve for φ or verify that the equation holds true when φ is substituted as needed. The left-hand side should simplify to 32 if all terms are expanded and calculated properly.</p>
+    <h3>Key Notes:</h3>
+    <ul>
+        <li>In these equations, <strong>i</strong> represents the imaginary unit, where <em>i</em><sup>2</sup> = -1.</li>
+        <li>The simplification of terms involving 1/i results in the transformation of the terms into expressions with <strong>i</strong> or <strong>-i</strong>.</li>
+        <li>The powers of complex numbers follow the rules of exponents and can be simplified using De Moivre's Theorem.</li>
+    </ul>
 
 </body>
 </html>
