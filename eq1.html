@@ -3,128 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question Paper Solutions</title>
+    <title>Math Solutions</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             color: #333;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
         }
         .container {
-            width: 90%;
-            margin: auto;
-            max-width: 1200px;
-            background: white;
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            border-radius: 8px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
+        h1 {
             text-align: center;
-            color: #333;
+            color: #4CAF50;
         }
         .question {
-            margin: 15px 0;
+            margin: 20px 0;
             padding: 15px;
-            border-left: 4px solid #007BFF;
-            background: #f9f9f9;
+            background: #f1f1f1;
+            border-left: 5px solid #4CAF50;
         }
         .solution {
-            margin-top: 10px;
-            padding: 10px;
+            margin: 10px 0 20px 0;
+            padding: 15px;
             background: #e8f5e9;
-            border-left: 4px solid #4CAF50;
+            border-left: 5px solid #2e7d32;
         }
         code {
+            display: block;
+            padding: 10px;
             background: #eee;
-            padding: 2px 4px;
-            border-radius: 3px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: monospace;
+        }
+        .venn {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .venn pre {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: inline-block;
+            font-size: 14px;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Question Paper Solutions</h1>
-        <p>Chauhan Mathematics Academy | Class 11 & 12</p>
-    </header>
     <div class="container">
-        <h2>Solutions</h2>
+        <h1>Math Questions & Solutions</h1>
         
+        <!-- Question 1 -->
         <div class="question">
-            <p><b>Q1. Write the sets in roster form</b></p>
-            <p>(i) \( A = \{x : x \text{ is an integer and } -3 \leq x \leq 7\} \)</p>
-            <div class="solution">
-                <p>Solution: \( A = \{-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7\} \)</p>
-            </div>
-            <p>(ii) \( B = \{x : x \text{ is a prime number which is a divisor of 60}\} \)</p>
-            <div class="solution">
-                <p>Solution: \( B = \{2, 3, 5\} \)</p>
+            <h2>Q1: Write the sets in roster form</h2>
+            <p>(i) \( A = \{ x : x \text{ is an integer and } -3 \leq x < 7 \} \)</p>
+            <p>(ii) \( B = \{ x : x \text{ is a prime number which is a divisor of 60} \} \)</p>
+        </div>
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p><strong>(i)</strong> \( A = \{-3, -2, -1, 0, 1, 2, 3, 4, 5, 6\} \)</p>
+            <p><strong>(ii)</strong> Prime divisors of 60: \( B = \{2, 3, 5\} \)</p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h2>Q2: Write the sets in set-builder form</h2>
+            <p>(i) \( A = \{2, 4, 8, 16, 32\} \)</p>
+            <p>(ii) \( B = \{1, 4, 9, 16, 100\} \)</p>
+        </div>
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p><strong>(i)</strong> \( A = \{x : x = 2^n, n \in \mathbb{N}, 1 \leq n \leq 5\} \)</p>
+            <p><strong>(ii)</strong> \( B = \{x : x \text{ is a square of a natural number}\} \)</p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h2>Q3: Venn Diagram Questions</h2>
+            <p>(i) Draw \( A - B \)</p>
+            <p>(ii) Draw \( A' \cup B' \)</p>
+        </div>
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p><strong>(i)</strong> \( A - B \) means elements in \( A \) but not in \( B \). <br> \( A - B = \{3, 6, 9, 15, 18, 21\} \)</p>
+            <p><strong>(ii)</strong> \( A' \cup B' \) means complement of \( A \cup B \). The result is the area outside both sets.</p>
+            <div class="venn">
+                <pre>
+                  _______
+                 /       \
+                /    A    \
+               /___________\
+               \           /
+                \         /
+                 \___B___/
+                A - B: Left part of A
+                </pre>
+                <pre>
+                  _______
+                 /       \
+             X  /         \   X
+               /           \
+               \           /
+            X  \         /   X
+                 \_______/
+           A' ∪ B': Outside both circles
+                </pre>
             </div>
         </div>
 
+        <!-- Question 4 -->
         <div class="question">
-            <p><b>Q2. Write the sets in set-builder form</b></p>
-            <p>(i) \( P = \{2, 4, 8, 16, 32\} \)</p>
-            <div class="solution">
-                <p>Solution: \( P = \{x : x = 2^n, n \in \mathbb{N}, 1 \leq n \leq 5\} \)</p>
-            </div>
-            <p>(ii) \( Q = \{1, 4, 9, 16, 25, 49, 81, 100\} \)</p>
-            <div class="solution">
-                <p>Solution: \( Q = \{x : x = n^2, n \in \mathbb{N}, 1 \leq n \leq 10\} \)</p>
-            </div>
-        </div>
-
-        <div class="question">
-            <p><b>Q3. Draw the Venn Diagram</b></p>
-            <p>(i) \( A - B \) = Elements in \( A \) not in \( B \)</p>
-            <p>(ii) \( A' \cup B' \): Universal set ka use karte hain.</p>
-            <div class="solution">
-                <p>Solution: \( A - B = \{3, 6, 9, 15, 18, 21\} \)</p>
-            </div>
-        </div>
-
-        <div class="question">
-            <p><b>Q4. Find \( A \times A \) if \( A = \{1, -1\} \)</b></p>
-            <div class="solution">
-                <p>Solution: \( A \times A = \{(1, 1), (1, -1), (-1, 1), (-1, -1)\} \)</p>
-            </div>
-        </div>
-
-        <div class="question">
-            <p><b>Q5. Complement of sets</b></p>
-            <p>(i) \( X = \{x : x \text{ is an even natural number}\} \)</p>
-            <div class="solution">
-                <p>Solution: \( X' = \{1, 3, 5, 7, 9, \ldots\} \) (Odd numbers)</p>
-            </div>
+            <h2>Q4: Find complements</h2>
+            <p>(i) \( X = \text{even natural numbers} \)</p>
             <p>(ii) \( Y = \{x : x + 5 > 8\} \)</p>
-            <div class="solution">
-                <p>Solution: \( Y = \{4, 5, 6, 7, \ldots\} \)</p>
-            </div>
+        </div>
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p><strong>(i)</strong> Complement of \( X \) (natural numbers not even): All odd natural numbers.</p>
+            <p><strong>(ii)</strong> Simplify \( x + 5 > 8 \): \( x > 3 \). Complement is \( x \leq 3 \).</p>
         </div>
 
+        <!-- Question 5 -->
         <div class="question">
-            <p><b>Q6. Let \( A = \{\frac{2}{3}, \frac{5}{3}\} \)</b></p>
-            <div class="solution">
-                <p>Solution: \( x + y = \frac{4}{3} \), \( x - y = 0 \)</p>
-            </div>
+            <h2>Q5: Find \( A \times A \) if \( A = \{1, -1\} \)</h2>
+        </div>
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p>Cartesian product \( A \times A \): All ordered pairs from \( A \).</p>
+            <code>
+                A × A = {(1, 1), (1, -1), (-1, 1), (-1, -1)}
+            </code>
         </div>
 
+        <!-- Question 6 -->
         <div class="question">
-            <p><b>Q7. Relation R on A</b></p>
-            <p>Set \( A = \{2, 3, 4, 6\} \)</p>
-            <div class="solution">
-                <p>Solution: \( R = \{(2, 2), (2, 4), (2, 6), (3, 3), (3, 6), (4, 4), (6, 6)\} \)</p>
-            </div>
+            <h2>Q6: Let \( R \) be the relation on \( A = \{2, 3, 4, 6\} \)</h2>
+            <p>\( R \) is defined as \( (a, b) : a \text{ divides } b \).</p>
+        </div>
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p>Check divisibility:</p>
+            <code>
+                R = {(2, 2), (2, 4), (2, 6), (3, 3), (3, 6), (4, 4), (6, 6)}
+            </code>
         </div>
     </div>
 </body>
-</html>
+    </html>
+    
