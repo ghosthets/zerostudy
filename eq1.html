@@ -3,319 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chemistry MCQs</title>
+    <title>Question Paper Solutions</title>
     <style>
-        /* Full-screen Notification styling */
-        .notification {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 204, 0, 0.9); /* Semi-transparent yellow */
-            color: black;
-            font-size: 30px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            animation: fadeInOut 5s ease-in-out;
-            display: none;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
-        @keyframes fadeInOut {
-            0% { opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { opacity: 0; }
-        }
-
-        /* Button to trigger notification (optional) */
-        #notify-btn {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #007bff;
+        header {
+            background-color: #007BFF;
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
+            text-align: center;
+            padding: 1rem 0;
         }
-
-        #notify-btn:hover {
-            background-color: #0056b3;
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 1200px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 8px;
         }
-        .correct { color: green; }
-        .incorrect { color: red; }
-        h2 { color: blue; }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 4px solid #007BFF;
+            background: #f9f9f9;
+        }
+        .solution {
+            margin-top: 10px;
+            padding: 10px;
+            background: #e8f5e9;
+            border-left: 4px solid #4CAF50;
+        }
+        code {
+            background: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
-    <h1>Chemistry Class 11 MCQs</h1>
-     <!-- Add a button to trigger the notification -->
-     
-    <!-- Notification Div -->
-    <div class="notification" id="notification">
-        Bappe Diya MERR Jatt DONT keerr baby Jutt Dont CAre, Bhaii kuch bta diye Exam me! God tuje Maths vale sir ki umr denge!
-    </div>
+    <header>
+        <h1>Question Paper Solutions</h1>
+        <p>Chauhan Mathematics Academy | Class 11 & 12</p>
+    </header>
+    <div class="container">
+        <h2>Solutions</h2>
+        
+        <div class="question">
+            <p><b>Q1. Write the sets in roster form</b></p>
+            <p>(i) \( A = \{x : x \text{ is an integer and } -3 \leq x \leq 7\} \)</p>
+            <div class="solution">
+                <p>Solution: \( A = \{-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7\} \)</p>
+            </div>
+            <p>(ii) \( B = \{x : x \text{ is a prime number which is a divisor of 60}\} \)</p>
+            <div class="solution">
+                <p>Solution: \( B = \{2, 3, 5\} \)</p>
+            </div>
+        </div>
 
-    <!-- MCQs content from your previous HTML goes here -->
+        <div class="question">
+            <p><b>Q2. Write the sets in set-builder form</b></p>
+            <p>(i) \( P = \{2, 4, 8, 16, 32\} \)</p>
+            <div class="solution">
+                <p>Solution: \( P = \{x : x = 2^n, n \in \mathbb{N}, 1 \leq n \leq 5\} \)</p>
+            </div>
+            <p>(ii) \( Q = \{1, 4, 9, 16, 25, 49, 81, 100\} \)</p>
+            <div class="solution">
+                <p>Solution: \( Q = \{x : x = n^2, n \in \mathbb{N}, 1 \leq n \leq 10\} \)</p>
+            </div>
+        </div>
 
-    <!-- JavaScript to show notification -->
-    <script>
-        // Function to show the notification
-        function showNotification() {
-            var notification = document.getElementById("notification");
-            notification.style.display = "flex"; // Change to flex for centering
-            setTimeout(function() {
-                notification.style.display = "none";
-            }, 5000); // Notification will disappear after 5 seconds
-        }
+        <div class="question">
+            <p><b>Q3. Draw the Venn Diagram</b></p>
+            <p>(i) \( A - B \) = Elements in \( A \) not in \( B \)</p>
+            <p>(ii) \( A' \cup B' \): Universal set ka use karte hain.</p>
+            <div class="solution">
+                <p>Solution: \( A - B = \{3, 6, 9, 15, 18, 21\} \)</p>
+            </div>
+        </div>
 
-        // Show notification automatically when the page loads
-        window.onload = showNotification;
-    </script>
+        <div class="question">
+            <p><b>Q4. Find \( A \times A \) if \( A = \{1, -1\} \)</b></p>
+            <div class="solution">
+                <p>Solution: \( A \times A = \{(1, 1), (1, -1), (-1, 1), (-1, -1)\} \)</p>
+            </div>
+        </div>
 
+        <div class="question">
+            <p><b>Q5. Complement of sets</b></p>
+            <p>(i) \( X = \{x : x \text{ is an even natural number}\} \)</p>
+            <div class="solution">
+                <p>Solution: \( X' = \{1, 3, 5, 7, 9, \ldots\} \) (Odd numbers)</p>
+            </div>
+            <p>(ii) \( Y = \{x : x + 5 > 8\} \)</p>
+            <div class="solution">
+                <p>Solution: \( Y = \{4, 5, 6, 7, \ldots\} \)</p>
+            </div>
+        </div>
 
-    <!-- Multiple Choice Questions -->
-    <h2>Multiple Choice Questions</h2>
+        <div class="question">
+            <p><b>Q6. Let \( A = \{\frac{2}{3}, \frac{5}{3}\} \)</b></p>
+            <div class="solution">
+                <p>Solution: \( x + y = \frac{4}{3} \), \( x - y = 0 \)</p>
+            </div>
+        </div>
 
-    <div class="question">
-        <p>1. The atomic number of an element is equal to the number of:</p>
-        <ul>
-            <li>(a) Protons</li>
-            <li class="correct">(b) Protons and electrons</li>
-            <li>(c) Neutrons</li>
-            <li>(d) Neutrons and electrons</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>2. The element with the smallest atomic radius is:</p>
-        <ul>
-            <li>(a) Sodium</li>
-            <li>(b) Magnesium</li>
-            <li>(c) Fluorine</li>
-            <li class="correct">(d) Helium</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>3. Which particle has no charge?</p>
-        <ul>
-            <li>(a) Proton</li>
-            <li class="correct">(b) Neutron</li>
-            <li>(c) Electron</li>
-            <li>(d) Nucleus</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>4. The mass of an electron is approximately:</p>
-        <ul>
-            <li class="correct">(a) 9.109 × 10<sup>-31</sup> kg</li>
-            <li>(b) 1.673 × 10<sup>-27</sup> kg</li>
-            <li>(c) 1.675 × 10<sup>-27</sup> kg</li>
-            <li>(d) 1.007 amu</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>5. Which element has the highest ionization energy?</p>
-        <ul>
-            <li>(a) Lithium</li>
-            <li>(b) Carbon</li>
-            <li>(c) Oxygen</li>
-            <li class="correct">(d) Helium</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>6. Electrons are found in:</p>
-        <ul>
-            <li>(a) The nucleus</li>
-            <li class="correct">(b) Orbitals</li>
-            <li>(c) Protons</li>
-            <li>(d) Neutrons</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>7. The relative atomic mass of an element is the weighted average of the masses of:</p>
-        <ul>
-            <li class="correct">(a) Its isotopes</li>
-            <li>(b) Its ions</li>
-            <li>(c) Its protons and neutrons</li>
-            <li>(d) Its molecules</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>8. The number of moles in 12 grams of carbon is:</p>
-        <ul>
-            <li>(a) 1 mole</li>
-            <li class="correct">(b) 0.5 moles</li>
-            <li>(c) 12 moles</li>
-            <li>(d) 6 moles</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>9. Which of the following is an alkali metal?</p>
-        <ul>
-            <li>(a) Magnesium</li>
-            <li>(b) Calcium</li>
-            <li>(c) Aluminum</li>
-            <li class="correct">(d) Sodium</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>10. The concept of quantized energy levels was introduced by:</p>
-        <ul>
-            <li>(a) Rutherford</li>
-            <li class="correct">(b) Bohr</li>
-            <li>(c) Schrödinger</li>
-            <li>(d) Einstein</li>
-        </ul>
-    </div>
-
-    <!-- True/False -->
-    <h2>True/False</h2>
-
-    <div class="question">
-        <p>1. All isotopes of a given element have the same number of protons. <span class="correct">True</span></p>
-    </div>
-
-    <div class="question">
-        <p>2. The electron has a positive charge. <span class="incorrect">False</span></p>
-    </div>
-
-    <div class="question">
-        <p>3. The mass of an electron is negligible compared to the mass of a proton. <span class="correct">True</span></p>
-    </div>
-
-    <div class="question">
-        <p>4. Rutherford’s model of the atom could not explain the stability of an atom. <span class="correct">True</span></p>
-    </div>
-
-    <div class="question">
-        <p>5. Bohr’s model of the atom was based on classical mechanics. <span class="incorrect">False</span></p>
-    </div>
-
-    <div class="question">
-        <p>6. Electrons in the same orbital must have opposite spins. <span class="correct">True</span></p>
-    </div>
-
-    <div class="question">
-        <p>7. The p orbital is spherical in shape. <span class="incorrect">False</span></p>
-    </div>
-
-    <div class="question">
-        <p>8. All atoms of a given element are identical in mass. <span class="incorrect">False</span></p>
-    </div>
-
-    <div class="question">
-        <p>9. An ion is an atom or molecule with a net electric charge. <span class="correct">True</span></p>
-    </div>
-
-    <div class="question">
-        <p>10. The nucleus of an atom contains electrons. <span class="incorrect">False</span></p>
-    </div>
-
-    <!-- Match the Pairs -->
-    <h2>Match the Pairs</h2>
-
-    <div class="question">
-        <p>1. Match the following:</p>
-        <ul>
-            <li>(a) Proton - Positive charge</li>
-            <li>(b) Neutron - Neutral charge</li>
-            <li>(c) Electron - Negative charge</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>2. Match the elements with their symbols:</p>
-        <ul>
-            <li>(a) Hydrogen - H</li>
-            <li>(b) Carbon - C</li>
-            <li>(c) Oxygen - O</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>3. Match the scientists with their contributions:</p>
-        <ul>
-            <li>(a) Dalton - Atomic theory</li>
-            <li>(b) Bohr - Energy levels</li>
-            <li>(c) Thomson - Electron discovery</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>4. Match the subatomic particles with their mass:</p>
-        <ul>
-            <li>(a) Electron - 9.109 × 10<sup>-31</sup> kg</li>
-            <li>(b) Proton - 1.673 × 10<sup>-27</sup> kg</li>
-            <li>(c) Neutron - 1.675 × 10<sup>-27</sup> kg</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>5. Match the quantum numbers with their significance:</p>
-        <ul>
-            <li>(a) Principal quantum number - Energy level</li>
-            <li>(b) Azimuthal quantum number - Shape of the orbital</li>
-            <li>(c) Magnetic quantum number - Orientation of the orbital</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>6. Match the molecules with their molecular formula:</p>
-        <ul>
-            <li>(a) Water - H<sub>2</sub>O</li>
-            <li>(b) Methane - CH<sub>4</sub></li>
-            <li>(c) Carbon dioxide - CO<sub>2</sub></li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>7. Match the elements with their atomic number:</p>
-        <ul>
-            <li>(a) Hydrogen - 1</li>
-            <li>(b) Helium - 2</li>
-            <li>(c) Carbon - 6</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>8. Match the bonds with their types:</p>
-        <ul>
-            <li>(a) Ionic bond - Transfer of electrons</li>
-            <li>(b) Covalent bond - Sharing of electrons</li>
-            <li>(c) Metallic bond - Sea of electrons</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>9. Match the types of radiation with their characteristics:</p>
-        <ul>
-            <li>(a) Alpha particles - Positively charged</li>
-            <li>(b) Beta particles - Negatively charged</li>
-            <li>(c) Gamma rays - Neutral</li>
-        </ul>
-    </div>
-
-    <div class="question">
-        <p>10. Match the physical states with their characteristics:</p>
-        <ul>
-            <li>(a) Solid - Fixed shape and volume</li>
-            <li>(b) Liquid - Fixed volume but no fixed shape</li>
-            <li>(c) Gas - Neither fixed shape nor volume</li>
-        </ul>
+        <div class="question">
+            <p><b>Q7. Relation R on A</b></p>
+            <p>Set \( A = \{2, 3, 4, 6\} \)</p>
+            <div class="solution">
+                <p>Solution: \( R = \{(2, 2), (2, 4), (2, 6), (3, 3), (3, 6), (4, 4), (6, 6)\} \)</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
